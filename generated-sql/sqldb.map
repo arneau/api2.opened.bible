@@ -1,2 +1,4 @@
 default.sql=default
 bibles.sql=default
+books.sql=default
+chapters.sql=default
