@@ -6,13 +6,13 @@ require_once '../libs/simple_html_dom.php';
 
 $books_objects = BookQuery::create()
 	->filterById([
-		'min' => 11
+		'min' => 31
 	])
-	->limit(2)
+	->limit(4)
 	->find();
 
-//var_dump($books_objects->toArray());
-//die;
+var_dump($books_objects->toArray());
+die;
 
 foreach ($books_objects as $book_object) {
 
@@ -43,8 +43,7 @@ foreach ($books_objects as $book_object) {
 
 			$verse_object = new Verse();
 			$verse_object->setChapter($chapter_object)
-				->setNumber($verse_number)
-				->save();
+				->setNumber($verse_number);
 
 			$translation_verse_object = new TranslationVerse();
 			$translation_verse_object->setText($verse_html)
