@@ -2,3 +2,5 @@ default.sql=default
 bibles.sql=default
 books.sql=default
 chapters.sql=default
+verses.sql=default
+kjv_translation_verses.sql=default
