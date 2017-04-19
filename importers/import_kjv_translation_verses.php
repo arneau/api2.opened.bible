@@ -6,9 +6,9 @@ require_once '../libs/simple_html_dom.php';
 
 $books_objects = BookQuery::create()
 	->filterById([
-		'min' => 31
+		'min' => 58
 	])
-	->limit(4)
+	->limit(9)
 	->find();
 
 var_dump($books_objects->toArray());
