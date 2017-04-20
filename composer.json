@@ -1,6 +1,7 @@
 {
 	"require": {
-		"propel/propel": "~2.0@dev"
+		"propel/propel": "~2.0@dev",
+		"youshido/graphql": "^1.2"
 	},
 	"autoload": {
 		"classmap": [
