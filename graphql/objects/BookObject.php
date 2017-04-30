@@ -22,17 +22,9 @@ class BookObject {
 
 		$resolve_data = [
 			'id' => $book_object->getId(),
-			'Chapters' => $chapters_array,
+			'chapters' => $chapters_array,
 			'name' => $book_object->getName(),
 		];
-
-		//		if ($info->getField()
-		//				->getName() == 'Book'
-		//		) {
-		//			$resolve_data['Chapters'][] = ChapterObject::resolve($value, [
-		//				'id' => 1,
-		//			], $info);
-		//		}
 
 		return $resolve_data;
 

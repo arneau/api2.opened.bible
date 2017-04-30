@@ -12,7 +12,7 @@ class BookType extends AbstractObjectType {
 		$name = 'Book';
 		$fields = [
 			'id' => new IntType(),
-			'Chapters' => new ListType(new ChapterType()),
+			'chapters' => new ListType(new IntType()),
 			'name' => new StringType(),
 		];
 
